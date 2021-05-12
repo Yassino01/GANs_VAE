@@ -10,9 +10,9 @@
 
 ## Références :
 
-* (Conditional Generative Adversarial Nets)[https://arxiv.org/abs/1411.1784]
-* (Generative Adversarial Nets)[https://arxiv.org/pdf/1406.2661.pdf]
-* (Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks)[https://arxiv.org/abs/1511.06434]
+* [Conditional Generative Adversarial Nets](https://arxiv.org/abs/1411.1784)
+* [Generative Adversarial Nets](https://arxiv.org/pdf/1406.2661.pdf)
+* [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/abs/1511.06434)
 
 
 
@@ -25,18 +25,17 @@
 
 **générer une image x** à partir d’une entrée **z** tirée selon une **distribution** pré-définie, et ce quel que soit le z choisi parmi la distribution.
       
-**x = G(z), z ∼ P(z)**
+**x = G(z)  ,   z ∼ P(z)**
 
 
 ### DataSet : 
 
 * ***CELIB_64***
 
-
 ### Architecture :
 
 <p align="center">
-  <img src="imgs/sgan.png" width="960" title=" Architecture GAN classique ">
+  <img src="imgs/sgan.png" width="1200" title=" Architecture GAN classique ">
 </p>
 
 * ***Génarateur G:*** dont l’objectif est de transformer n’importe quel entrée z tiré selon une distribution fixées en image x realiste.
@@ -46,13 +45,13 @@
 * ***Discriminateur D :*** . Ce réseau prendre une image en entrée et doit prédire si cette image est une image réelle x du jeu de données ou si c’est une image x˜ produite par le générateur.
 
 <p align="center">
-  <img src="imgs/disc.png" width="960" title=" Discriminator ">
+  <img src="imgs/disc.png" width="500" title=" Discriminator ">
 </p>
 
 ### Problème à optimiser :
 
 <p align="center">
-  <img src="imgs/optim.png" width="840" title=" Equation loss">
+  <img src="imgs/optim.png" width="500" title=" Equation loss">
 </p>
 
 D’un point de vue pratique, on **alterne** entre l’apprentissage du générateur et du discriminateur, qui ont chacun une fonction objectif différente dérivée du problème ci-dessus :
@@ -96,7 +95,7 @@ Par exemple, y peut correspondre à une **classe**, ou à une image d’un autre
 * ***Discriminateur conditionnel cD(x, y):*** prédit si l’image x possédant les attributs y est une image réelle x∗ ou une image générée x.
 
 <p align="center">
-  <img src="imgs/disc2.png" width="960" title=" Discriminator ">
+  <img src="imgs/disc2.png" width="500" title=" Discriminator ">
 </p>
 
 ### Problème à optimiser :
