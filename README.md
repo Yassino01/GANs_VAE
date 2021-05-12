@@ -66,13 +66,13 @@ D’un point de vue pratique, on **alterne** entre l’apprentissage du généra
 * cGAN est un GAN conditionné par une variable y, par exemple un vecteur d’attributs. Dans ce cas, nous allons donner y au deux réseaux, voir les figures suivantes :
 
 <p align="center">
-  <img src="imgs/cgan_scheme.png" width="460" title=" Architecture GAN classique ">
+  <img src="imgs/cgan_scheme.png" width="460" title=" Architecture GAN conditionnel ">
 </p>
 
 * Voici un exemple de génération par un cGAN
 
 <p align="center">
-  <img src="imgs/cgan_scheme1.png" width="460" title=" Architecture GAN classique ">
+  <img src="imgs/scgan_scheme1.png" width="460" title="GAN conditionnel cas d'usage ">
 </p>
 
 ### objectif (GAN conditionnel):
@@ -88,6 +88,10 @@ Par exemple, y peut correspondre à une **classe**, ou à une image d’un autre
 * ***MNIST***
 
 ### Architecture :
+
+<p align="center">
+  <img src="imgs/cgan1.png" width="1200" title=" Architecture GAN conditionnel ">
+</p>
 
 * ***Génarateur conditionnel cG(z, y) :*** génère une image à partir d’un vecteur aléatoire z et d’un vecteur d’attributs y associé à l’image x∗ ∈ Data, une image x telque :
 **x = cG(z, y), z ∼ P(z), y = attribut(x∗)** 
