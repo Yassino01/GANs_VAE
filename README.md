@@ -120,5 +120,5 @@ Les equations des loss de G et D devienent
 ### Evolution  de la loss :
 
 <p align="center">
-  <img src="imgs/cGAN_loss.png" width="920" title=" Courbe loss G et D">
+  <img src="imgs/cGAN1_loss.png" width="920" title=" Courbe loss G et D">
 </p>
