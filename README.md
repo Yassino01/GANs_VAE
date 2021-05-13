@@ -60,6 +60,13 @@ D’un point de vue pratique, on **alterne** entre l’apprentissage du généra
   <img src="imgs/loss_gd.png" width="500" title=" Equation loss G et D">
 </p>
 
+
+### Evlution de la loss :
+
+<p align="center">
+  <img src="imgs/GAN_loss.png" width="920" title=" Courbe loss G et D">
+</p>
+
 ## cGAN (Conditional Gnerative Adversial Networks):
 
 
@@ -108,4 +115,10 @@ Les equations des loss de G et D devienent
 
 <p align="center">
   <img src="imgs/loss_gdc.png" width="500" title=" Equation loss G et D">
+</p>
+
+### Evolution  de la loss :
+
+<p align="center">
+  <img src="imgs/cGAN_loss.png" width="920" title=" Courbe loss G et D">
 </p>
